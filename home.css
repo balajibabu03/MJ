@@ -1,0 +1,41 @@
+.fa-facebook-official:hover {
+    color: #3b5999;
+}
+.fa-twitter:hover {
+    color: #55acee;
+}
+.fa-instagram:hover {
+    color: #e4405f;
+}
+.fa-google:hover {
+    color: #cd201f;
+}
+.fa-phone:hover {
+    color: #25D366;
+}
+
+.font_new{
+    font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+}
+
+/* To remove scroll */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent; 
+}
+  /* The progress bar (scroll indicator) */
+.progress-bar1 {
+    height: 8px;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 0%;
+    position: fixed;
+    top: 69px;
+}
