@@ -29,61 +29,8 @@
     padding-right: 0;
   }
 
-  .homeImage
-{
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    top: 69px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('img/ice_skatefinish.png');
-}
-
-.masthead.home-masthead {
-    border-bottom: 0;
-    background: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQAB…5dd+99N9e9+691737r3Xvfuvde9+691737r3Xvfuvde9+691k8f+P+8f8AG/fuvdZffuvdf//Z) repeat-x;
-    background-color: #3a90cb;
-    background-size: auto 100%;
-    position: relative;
-    overflow: hidden;
-    min-height: 480px;
-    height: calc(100vh - 100px);
-    max-height: 800px;
-}
-
-.masthead.home-masthead .container {
-    height: 100%;
-    position: relative;
-    z-index: 2;
-}
-
-.masthead.home-masthead .image {
-    height: 100%;
-    width: 100vw;
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.masthead.home-masthead .masthead-text {
-    position: relative;
-    z-index: 4;
-    margin-left: 38px;
-    min-width: 340px;
-    width: 49.1666%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+#VideoQuote {
+    font-size: 3.5rem;
 }
 
 .home-video{
@@ -137,6 +84,28 @@ header {
     header video {
       display: none;
     }
+  }
+
+  @media screen and (min-width: 601px) {
+    #Content_heading {
+      font-size:2vw;
+    }
+   
+  }
+  
+  @media screen and (max-width: 600px) {
+   #Content_heading {
+      font-size:5vw;
+    }
+  }
+
+  .Underline{
+    background-color: grey;
+    width: 140px;
+    height: 3px;
+    position: absolute;
+    left: calc(50% - 70px);
+    border-radius: 75%;
   }
 
 /* To remove scroll */
