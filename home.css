@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .fa-facebook-official:hover {
     color: #3b5999;
 }
@@ -87,15 +90,21 @@ header {
   }
 
   @media screen and (min-width: 601px) {
-    #Content_heading {
-      font-size:2vw;
+    #Videoheading {
+      font-size:5vw;
+    }
+    #About_us {
+      font-size:3.5rem;
     }
    
   }
   
   @media screen and (max-width: 600px) {
-   #Content_heading {
-      font-size:5vw;
+   #Videoheading {
+      font-size:8vw;
+    }
+   #About_us {
+      font-size:2.5rem;
     }
   }
 

@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    
+    $("#Features_report").click(function(){
+        $("#About_us_Container").scrollTop(100);
+      });
     //Click Event Function-IIFE
     (function clickfunction(){
         //Nav icon click events 
@@ -16,6 +20,7 @@ $(document).ready(function () {
             $("#Home_report").removeClass("active");
             $("#Pricing_report").removeClass("active");
             $("#Contact_report").removeClass("active");
+            
         });
 
         $("#Pricing_report").click(function(){
@@ -40,6 +45,7 @@ $(document).ready(function () {
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
     }
+
 
 
   });
