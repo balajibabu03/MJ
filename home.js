@@ -1,22 +1,31 @@
 $(document).ready(function () {
 
     
-    $("#Features_report").click(function(){
-        $("#About_us_Container").scrollTop(100);
-      });
+    
     //Click Event Function-IIFE
     (function clickfunction(){
         //Nav icon click events 
         $("#Home_report").addClass("active");
         $("#Home_report").click(function(){
+            $("#About_report").removeClass("active");
             $("#Features_report").removeClass("active");
             $("#Home_report").addClass("active");
             $("#Pricing_report").removeClass("active");
             $("#Contact_report").removeClass("active"); 
         });
 
+        $("#About_report").click(function(){
+            $("#Features_report").removeClass("active");
+            $("#About_report").addClass("active");
+            $("#Home_report").removeClass("active");
+            $("#Pricing_report").removeClass("active");
+            $("#Contact_report").removeClass("active");
+            
+        });
+
         $("#Features_report").click(function(){
             $("#Features_report").addClass("active");
+            $("#About_report").removeClass("active");
             $("#Home_report").removeClass("active");
             $("#Pricing_report").removeClass("active");
             $("#Contact_report").removeClass("active");
@@ -25,6 +34,7 @@ $(document).ready(function () {
 
         $("#Pricing_report").click(function(){
             $("#Features_report").removeClass("active");
+            $("#About_report").removeClass("active");
             $("#Home_report").removeClass("active");
             $("#Pricing_report").addClass("active");
             $("#Contact_report").removeClass("active");
@@ -32,6 +42,7 @@ $(document).ready(function () {
 
         $("#Contact_report").click(function(){
             $("#Features_report").removeClass("active");
+            $("#About_report").removeClass("active");
             $("#Home_report").removeClass("active");
             $("#Pricing_report").removeClass("active");
             $("#Contact_report").addClass("active");
